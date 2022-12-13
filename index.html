@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Bootstrap Visualization Dashboard</title>
+    <!-- Add a title here -->
+    <title>Homepage</title>
 
     <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- Our own CSS stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css" media="screen">
@@ -20,73 +24,78 @@
   <body>
     <!-- Start of navbar -->
     <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Latitude vs X</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Latitude vs Weather</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Plots
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Max Temperature</a></li>
-                <li><a class="dropdown-item" href="#">Humidity</a></li>
-                <li><a class="dropdown-item" href="#">Cloudiness</a></li>
-                <li><a class="dropdown-item" href="#">Wind Speed</a></li>
-              </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
+                <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+                <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Comparison</a>
+              <a class="nav-link" href="comparison.html">Comparison</a>
             </li>
-          
             <li class="nav-item">
-              <a class="nav-link" href="#">Data</a>
-            </li>
-          </form>
+              <a class="nav-link" href="data.html">Data</a>
+          </ul>
         </div>
       </div>
     </nav>
     <!-- End of navbar -->
 
     <!-- Start of container -->
-    <div id="main">
-      <div id="maincontent"></div>
-        <div class="container">
-          <div class="jumbotron">
-            <h1 class="display-4">Latitude vs X</h1>
-            <p class="lead">This is placed inside a container</p>
-            <hr class="my-4">
-            <p>Here we can display some more text!</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div class="container">
+      <div class="row">
+        
+        <!--Project Overview-->
+        <div class="col-md-10">
+          <br><div class="jumbotron">
+            <h1 class="display-4">Latitude vs Weather</h1>
+            <p class="lead">Latitude vs Weather shows a comparison of Earth’s weather and how it varies amongst the Latitudes that is occurs at. /
+            This website contains pages that show the data that was used to develop the plot graphs, a comparison of the four weather types, and /
+            pages dedicated to each weather type.</p>
+            <p class="lead">The four weather types that were include in this comparison analysis include:</p>
+            <ul class="lead">
+              <li>Maximum Temperature</li>
+              <li>Humidity</li>
+              <li>Cloudiness</li>
+              <li>Wind Speed</li>
+              <p> </p>
+            </ul>
+            <br><a class="btn btn-primary btn-md" href="comparison.html" role="button">Learn more</a>
           </div>
         </div>
-      </div>
-      <div id="clearingdiv"></div>
-    </div>
-      <!-- Start of Visualizations imageNav Area -->
-      <div class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <li><button class="btn btn-default">
-            <img src="assets/images/Fig1.png" width="150" />
-          </button></li>
-          <li><button class="btn btn-default">
-            <img src="assets/images/Fig2.png" width="150" />
-          </button></li>
-          <li><button class="btn btn-default">
-            <img src="assets/images/Fig3.png" width="150" />
-          </button></li>
-          <li><button class="btn btn-default">
-            <img src="assets/images/Fig4.png" width="150" />
-          </button></li>
+       
+        <!-- Start of Visualizations imageNav Area -->
+        <div class="col-md-2">
+          <br><a href="visualizations/temp.html">
+            <button type="button" class="btn btn-default">
+              <img src="assets/images/Fig1.png" width="150%" />
+            </button></a>
+          <a href="visualizations/humidity.html">
+            <button class="btn btn-default">
+              <img src="assets/images/Fig2.png" width="150%" />
+            </button></a>
+          <a href="visualizations/cloudiness.html">
+            <button class="btn btn-default">
+              <img src="assets/images/Fig3.png" width="150%" />
+            </button>
+          <a href="visualizations/wind.html">
+            <button class="btn btn-default">
+              <img src="assets/images/Fig4.png" width="150%" />
+            </button>
         </div>
-      
-    <!-- End of the Visualizations imageNav Area -->
+        <!-- End of the Visualizations imageNav Area -->
+      </div>
+    </div>
     <!-- End of container -->
 
     <!-- jQuery CDN -->
