@@ -21,15 +21,15 @@
 
   </head>
 
-  <body>
+  <body class = "back-image">
     <!-- Start of navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#ffffff;">
       <div class="container">
         <a class="navbar-brand" href="index.html">Latitude vs Weather</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Plots</a>
@@ -44,7 +44,7 @@
               <a class="nav-link" href="comparison.html">Comparison</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="data.html">Data</a>
+              <a class="nav-link" href="data.html">Data</a></li>
           </ul>
         </div>
       </div>
@@ -57,7 +57,7 @@
         
         <!--Project Overview-->
         <div class="col-md-10">
-          <br><div class="jumbotron">
+          <br><div class="jumbotron" style="background-color: #ffffff;">
             <h1 class="display-4">Latitude vs Weather</h1>
             <p class="lead">Latitude vs Weather shows a comparison of Earth’s weather and how it varies amongst the Latitudes that is occurs at. /
             This website contains pages that show the data that was used to develop the plot graphs, a comparison of the four weather types, and /
@@ -70,27 +70,27 @@
               <li>Wind Speed</li>
               <p> </p>
             </ul>
-            <br><a class="btn btn-primary btn-md" href="comparison.html" role="button">Learn more</a>
+            <br><br><br><a class="btn btn-outline-secondary" href="comparison.html" role="button">Learn more</a>
           </div>
         </div>
        
         <!-- Start of Visualizations imageNav Area -->
         <div class="col-md-2">
           <br><a href="visualizations/temp.html">
-            <button type="button" class="btn btn-default">
-              <img src="assets/images/Fig1.png" width="150%" />
+            <button class="btn btn-default" style="background-color: #ffffff;"> Max Temp
+              <img src="assets/images/Fig1.png" width="100%" />
             </button></a>
-          <a href="visualizations/humidity.html">
-            <button class="btn btn-default">
-              <img src="assets/images/Fig2.png" width="150%" />
+          <br><br><a href="visualizations/humidity.html">
+            <button class="btn btn-default" style="background-color: #ffffff;"> Humidity
+              <img src="assets/images/Fig2.png" width="100%" />
             </button></a>
-          <a href="visualizations/cloudiness.html">
-            <button class="btn btn-default">
-              <img src="assets/images/Fig3.png" width="150%" />
+          <br><br><a href="visualizations/cloudiness.html" >
+            <button class="btn btn-default" style="background-color: #ffffff;"> Cloudiness
+              <img src="assets/images/Fig3.png" width="100%" />
             </button>
-          <a href="visualizations/wind.html">
-            <button class="btn btn-default">
-              <img src="assets/images/Fig4.png" width="150%" />
+          <br><br><a href="visualizations/wind.html">
+            <button class="btn btn-default" style="background-color: #ffffff;"> Wind
+              <img src="assets/images/Fig4.png" width="100%" />
             </button>
         </div>
         <!-- End of the Visualizations imageNav Area -->

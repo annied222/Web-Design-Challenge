@@ -17,13 +17,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- Our own CSS stylesheet -->
-    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
 
   </head>
 
-  <body>
+  <body class = "back-image">
     <!-- Start of navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
       <div class="container">
         <a class="navbar-brand" href="../index.html">Latitude vs Weather</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,38 +57,38 @@
 
         <!--Wind Speed Overview-->
         <div class="col-md-10">
-          <br><div class="jumbotron">
-            <p style="text-align:center;"><img src="../assets/images/Fig4.png" class="img-border"/></p>
-              <br><br><p class="lead">Latitude vs Weather shows a comparison of Earth’s weather and how it varies amongst the Latitudes that is occurs at. /
-              This website contains pages that show the data that was used to develop the plot graphs, a comparison of the four weather types, and /
-              pages dedicated to each weather type.</p>
+          <br><div class="jumbotron" style="background-color: #ffffff;">
+            <h1 class="display-4" style="text-align: center;">Latitude vs Wind Speed</h1>
+            <br><p style="text-align:center;"><img src="../assets/images/Fig4.png"/></p>
+            <br><p class="lead">Wind speed is generally between 0 and 15mph regardless of latitude, with some few points beyond that range.
+              The highest recorded wind speed of about 50mph</p>
           </div>
         </div>
           
         <!-- Start of Visualizations imageNav Area -->
         <div class="col-md-2">
           <br><a href="temp.html">
-            <button type="button" class="btn btn-default">
-              <img src="../assets/images/Fig1.png" width="150%" />
+            <button class="btn btn-default" style="background-color: #ffffff;"> Max Temp
+              <img src="../assets/images/Fig1.png" width="100%" />
             </button></a>
-          <a href="humidity.html">
-            <button class="btn btn-default">
-              <img src="../assets/images/Fig2.png" width="150%" />
+          <br><br><a href="humidity.html">
+            <button class="btn btn-default" style="background-color: #ffffff;"> Humidity
+              <img src="../assets/images/Fig2.png" width="100%" />
             </button></a>
-          <a href="cloudiness.html">
-            <button class="btn btn-default">
-              <img src="../assets/images/Fig3.png" width="150%" />
+          <br><br><a href="cloudiness.html" >
+            <button class="btn btn-default" style="background-color: #ffffff;"> Cloudiness
+              <img src="../assets/images/Fig3.png" width="100%" />
             </button>
-          <a href="wind.html">
-            <button class="btn btn-default">
-              <img src="../assets/images/Fig4.png" width="150%" />
+          <br><br><a href="wind.html">
+            <button class="btn btn-default" style="background-color: #ffffff;"> Wind
+              <img src="../assets/images/Fig4.png" width="100%" />
             </button>
         </div>
         <!-- End of the Visualizations imageNav Area -->
       </div>
     </div>
     <!-- End of container -->
-
+    
     <!-- jQuery CDN -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 

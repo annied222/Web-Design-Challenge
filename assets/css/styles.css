@@ -1,15 +1,9 @@
-.box-set {
-    position: relative;
-}
-
-.menu-left{
-    top: 0%;
-    left: 25%;
-}
-
-img-border{
-    border: 5px solid rgb(129, 126, 126);
+.back-image {
+    background-image: url("../images/sunset-sky-afterglow-evening-sky-159020.jpg");
   }
+.nav-test {
+    color: #FEA278;
+}
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
